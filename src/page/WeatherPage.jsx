@@ -38,7 +38,6 @@ export const WeatherPage = () => {
   const handleSeacrch = async (lat, lon) => {
     try {
       const response = await axios.get(url);
-      console.log(response.data);
       setWeather((prev) => ({
         ...prev,
         name: response.data.name,
@@ -117,15 +116,15 @@ export const WeatherPage = () => {
             <div className="sunrise flex gap-2">
               <img src={sunrise} style={{ width: "50px" }} />
               <div className="sunrise-detail flex flex-col">
-                <p>Sunrise</p>
-                <p>{sunriseTime}</p>
+                <p className="text-xl">Sunrise</p>
+                <p className="text-sm">{sunriseTime}</p>
               </div>
             </div>
             <div className="sunset flex gap-2">
               <img src={sunset} style={{ width: "50px" }} />
               <div className="Sunset-detail flex flex-col">
-                <p>Sunset</p>
-                <p>{sunsetTime}</p>
+                <p className="text-xl">Sunset</p>
+                <p className="text-sm">{sunsetTime}</p>
               </div>
             </div>
           </div>
@@ -134,15 +133,15 @@ export const WeatherPage = () => {
             <div className="flex gap-2">
               <img src={wind} style={{ width: "50px" }} />
               <div className="wind flex flex-col">
-                <p>Wind</p>
-                <p>{Math.round(Weather.wind)} Km/h</p>
+                <p className="text-xl">Wind</p>
+                <p className="text-sm">{Math.round(Weather.wind)} Km/h</p>
               </div>
             </div>
             <div className="flex gap-2">
               <img src={humidity} style={{ width: "50px" }} />
               <div className="humidity flex flex-col">
-                <p>humidity</p>
-                <p>{Weather.humidity}%</p>
+                <p className="text-xl">humidity</p>
+                <p className="text-sm">{Weather.humidity}%</p>
               </div>
             </div>
           </div>
