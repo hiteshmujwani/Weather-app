@@ -1,0 +1,30 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.bg-img {
+  /* background: url(https://wallpapersmug.com/download/3840x2400/01380c/forest-waterfall-river-nature.jpg); */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(40%);
+  position: fixed;
+  /* z-index: -1; */
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.W-card {
+  width: 400px;
+  height: 525px;
+  background: transparent;
+  border-radius: 25px;
+  backdrop-filter: blur(50px);
+  display: flex;
+  padding: 10px;
+}
