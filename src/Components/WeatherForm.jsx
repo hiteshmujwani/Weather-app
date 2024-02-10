@@ -9,7 +9,7 @@ export const WeatherForm = ({ value, setValue, handleSeacrch }) => {
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="w-52 rounded-full font-normal text-lg uppercase text-black px-3 ouline-none"
+        className="w-full rounded-full font-normal text-lg uppercase text-black px-3 ouline-none"
       />
 
       <button
